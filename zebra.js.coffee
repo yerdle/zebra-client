@@ -2,7 +2,6 @@ dotenv = require('dotenv')
 dotenv.load()
 
 PusherClient = require('pusher-node-client').PusherClient
-url = require('url')
 easypost = require('node-easypost')(process.env.EASYPOST_SECRET_KEY)
 child_process = require('child_process')
 fs = require('fs')
