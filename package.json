@@ -1,0 +1,13 @@
+{
+  "name": "zebra-client",
+  "description": "yerdle client for zebra printer",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "dotenv": "~0.2.4",
+    "request": "~2.33.0",
+    "node-easypost": "~2.0.4",
+    "pusher-node-client": "0.0.8",
+    "coffee-script": "~1.7.1"
+  }
+}
