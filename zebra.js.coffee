@@ -33,7 +33,7 @@ pusher_client.on 'connect', () ->
         console.log("ERROR: #{err}") if err
         console.log "Fetching #{shipment.postage_label.label_zpl_url}" if DEBUG
 
-        if debug
+        if DEBUG
           lpr = child_process.spawn "bash", ['-c', "cat > #{data.easypost_shipment_id}"]
         else
           lpr = child_process.spawn "lpr", ['-P', process.env.ZEBRA_PRINT_QUEUE_NAME, '-o', 'raw']
